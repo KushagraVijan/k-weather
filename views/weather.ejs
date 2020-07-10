@@ -1,0 +1,334 @@
+<html>
+
+<head>
+    <title>K-Weather</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/icons/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="head"> K-Weather </div>
+    <form id="search">
+        <input name="address" type="text" placeholder="Enter location to search..." required></input>
+        <button type="submit"></button>
+    </form>
+
+    <div id="time">
+        <div id="timeData">time</div>
+    </div>
+
+    <div id="data">
+        <div id="icon">
+            <div style="margin-top: 10px; text-align: center; font-weight: bold;">
+                <a href="<%= map %>" target="_blank">
+                    <%= location %>
+                </a>
+            </div>
+
+            <div id="iconData" style="background-image: url('/icons/<%= icon %>.png');">
+            </div>
+
+            <div style="margin-top: 10px; text-align: center; font-weight: bold;">
+                <%= icon %>
+            </div>
+        </div>
+        <div id="forecast">
+            <div id="property">
+                <div style="text-align: center;">
+                    <%= summary %>
+                </div>
+            </div>
+            <div id="temp">
+                <div style="width: 60%; float: left; padding-top: 15px;">Temperature:
+                    <%= temp %>°C
+                </div>
+                <div style="height: 48%; padding-top: 5px;">Min:
+                    <div style="float: right;">
+                        <%= min %>°C
+                    </div>
+                </div>
+                <div style="height: 48%;">Max:
+                    <div style="float: right;">
+                        <%= max %>°C
+                    </div>
+                </div>
+            </div>
+
+            <div id="property">Sunrise:
+                <div id="sunrise" style="float: right;">
+                    <%= sunrise %>
+                </div>
+            </div>
+
+            <div id="property">Sunset:
+                <div id="sunset" style="float: right;">
+                    <%= sunset %>
+                </div>
+            </div>
+
+            <div id="property">Moon Phase:
+                <div style="float: right;">
+                    <%= moonPhase %>
+                </div>
+            </div>
+
+
+            <div id="property">Humidity:
+                <div style="float: right;">
+                    <%= humidity %>
+                </div>
+            </div>
+
+            <div id="property">Pressure:
+                <div style="float: right;">
+                    <%= pressure %>
+                </div>
+            </div>
+
+            <div id="property">Cloud cover:
+                <div style="float: right;">
+                    <%= cloud %>
+                </div>
+            </div>
+
+            <div id="property">Precipation Probability:
+                <div style="float: right;">
+                    <%= precprob %>
+                </div>
+            </div>
+
+            <div id="property">Precipation Intensity:
+                <div style="float: right;">
+                    <%= precint %>
+                </div>
+            </div>
+
+            <div id="property">Precipitation type:
+                <div style="float: right;">
+                    <%= prectype %>
+                </div>
+            </div>
+
+            <div id="property">Wind speed:
+                <div style="float: right;">
+                    <%= wind %>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="time">Today</div>
+
+
+    <div id="data">
+        <div id="icon">
+            <div style="margin-top: 10px; text-align: center; font-weight: bold;">
+                <a href="<%= map %>" target="_blank">
+                    <%= location %>
+                </a>
+            </div>
+
+            <div id="iconData" style="background-image: url('/icons/<%= icon2 %>.png');">
+            </div>
+
+            <div style="margin-top: 10px; text-align: center; font-weight: bold;">
+                <%= icon2 %>
+            </div>
+        </div>
+        <div id="forecast">
+            <div id="property">
+                <div style="text-align: center;">
+                    <%= summary2 %>
+                </div>
+            </div>
+            <div id="temp">
+                <div style="width: 60%; float: left; padding-top: 15px;">Temperature:
+                    <%= temp2 %>°C
+                </div>
+                <div style="height: 48%; padding-top: 5px;">Min:
+                    <div style="float: right;">
+                        <%= min2 %>°C
+                    </div>
+                </div>
+                <div style="height: 48%;">Max:
+                    <div style="float: right;">
+                        <%= max2 %>°C
+                    </div>
+                </div>
+            </div>
+
+            <div id="property">Sunrise:
+                <div id="sunrise2" style="float: right;">
+                    <%= sunrise2 %>
+                </div>
+            </div>
+
+            <div id="property">Sunset:
+                <div id="sunset2" style="float: right;">
+                    <%= sunset2 %>
+                </div>
+            </div>
+
+            <div id="property">Moon Phase:
+                <div style="float: right;">
+                    <%= moonPhase2 %>
+                </div>
+            </div>
+
+
+            <div id="property">Humidity:
+                <div style="float: right;">
+                    <%= humidity2 %>
+                </div>
+            </div>
+
+            <div id="property">Pressure:
+                <div style="float: right;">
+                    <%= pressure2 %>
+                </div>
+            </div>
+
+            <div id="property">Cloud cover:
+                <div style="float: right;">
+                    <%= cloud2 %>
+                </div>
+            </div>
+
+            <div id="property">Precipation Probability:
+                <div style="float: right;">
+                    <%= precprob2 %>
+                </div>
+            </div>
+
+            <div id="property">Precipation Intensity:
+                <div style="float: right;">
+                    <%= precint2 %>
+                </div>
+            </div>
+
+            <div id="property">Precipitation type:
+                <div style="float: right;">
+                    <%= prectype2 %>
+                </div>
+            </div>
+
+            <div id="property">Wind speed:
+                <div style="float: right;">
+                    <%= wind2 %>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="time">Tommorow</div>
+
+
+    <div id="data">
+        <div id="icon">
+            <div style="margin-top: 10px; text-align: center; font-weight: bold;">
+                <a href="<%= map %>" target="_blank">
+                    <%= location %>
+                </a>
+            </div>
+
+            <div id="iconData" style="background-image: url('/icons/<%= icon3 %>.png');">
+            </div>
+
+            <div style="margin-top: 10px; text-align: center; font-weight: bold;">
+                <%= icon3 %>
+            </div>
+        </div>
+        <div id="forecast">
+            <div id="property">
+                <div style="text-align: center;">
+                    <%= summary3 %>
+                </div>
+            </div>
+            <div id="temp">
+                <div style="width: 60%; float: left; padding-top: 15px;">Temperature:
+                    <%= temp3 %>°C
+                </div>
+                <div style="height: 48%; padding-top: 5px;">Min:
+                    <div style="float: right;">
+                        <%= min3 %>°C
+                    </div>
+                </div>
+                <div style="height: 48%;">Max:
+                    <div style="float: right;">
+                        <%= max3 %>°C
+                    </div>
+                </div>
+            </div>
+
+            <div id="property">Sunrise:
+                <div id="sunrise3" style="float: right;">
+                    <%= sunrise3 %>
+                </div>
+            </div>
+
+            <div id="property">Sunset:
+                <div id="sunset3" style="float: right;">
+                    <%= sunset3 %>
+                </div>
+            </div>
+
+            <div id="property">Moon Phase:
+                <div style="float: right;">
+                    <%= moonPhase3 %>
+                </div>
+            </div>
+
+
+            <div id="property">Humidity:
+                <div style="float: right;">
+                    <%= humidity3 %>
+                </div>
+            </div>
+
+            <div id="property">Pressure:
+                <div style="float: right;">
+                    <%= pressure3 %>
+                </div>
+            </div>
+
+            <div id="property">Cloud cover:
+                <div style="float: right;">
+                    <%= cloud3 %>
+                </div>
+            </div>
+
+            <div id="property">Precipation Probability:
+                <div style="float: right;">
+                    <%= precprob3 %>
+                </div>
+            </div>
+
+            <div id="property">Precipation Intensity:
+                <div style="float: right;">
+                    <%= precint3 %>
+                </div>
+            </div>
+
+            <div id="property">Precipitation type:
+                <div style="float: right;">
+                    <%= prectype3 %>
+                </div>
+            </div>
+
+            <div id="property">Wind speed:
+                <div style="float: right;">
+                    <%= wind3 %>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="time">Day After Tommorow</div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    <script src="time.js"></script>
+</body>
+
+</html>

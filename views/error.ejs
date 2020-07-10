@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <title>K-Weather</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/icons/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="head"> K-Weather </div>
+    <form id="search">
+        <input name="address" type="text" placeholder="Enter location to search..." required></input>
+        <button type="submit"></button>
+    </form>
+
+    <div id="time">
+        <div id="timeData">time</div>
+    </div>
+
+    <div id="error">
+        <%= err %>
+    </div>
+    <script src="time.js"></script>
+</body>
+
+</html>
